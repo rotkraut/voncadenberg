@@ -3,6 +3,16 @@ margin: 0;
 padding: 0;
  }
 
+
+ body {
+   background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("../img/von-cadenberg-natura-azzurro1.png");
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-attachment: fixed;
+     background-position: center;
+   color: white;
+ }
+
 .grid {
   display: grid;
   margin-top: 50px;
