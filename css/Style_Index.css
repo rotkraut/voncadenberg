@@ -1,0 +1,149 @@
+* {
+margin: 0;
+padding: 0;
+ }
+
+.grid {
+  display: grid;
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 50px;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
+  grid-template-areas:
+  "name"
+  "subt"
+  "cont"
+  "lang"
+  "footer"
+}
+
+.name  {
+    grid-area: name;
+    text-align: center;
+    font-family: 'Miss Fajardose', cursive;
+    font-size: 80px;
+    font-weight: 590;
+
+}
+
+.subt  {
+    grid-area: subt;
+    text-align: center;
+    font-size: 23px;
+    font-family: 'EB Garamond', serif;
+    font-style: normal;
+}
+
+.cont {
+  grid-area: cont;
+  display: grid;
+  justify-content: center;
+  }
+
+.pic {
+  display: grid;
+  width: 50%;
+}
+
+.lang {
+  grid-area: lang;
+  display: grid;
+  margin-right: 40px;
+  margin-left: 40px;
+  padding: 50px;
+  grid-gap: 30px;
+  min-height: 50px;
+  text-align: center;
+  grid-template-rows: auto auto auto;
+
+}
+
+.lang_box {
+  display: grid;
+  padding: 15px;
+  background-color: black;
+  opacity: 0.5;
+  font-size: 35px;
+  font-family: 'EB Garamond', serif;
+  font-style: normal;
+  box-shadow: 5px 10px 18px black;
+}
+
+.lang_box a {
+  background-color: inherit;
+  text-decoration: underline;
+}
+
+.footer  {
+    grid-area: footer;
+    margin: 20px;
+    margin-bottom: 30px;
+    font-family: 'EB Garamond', serif;
+    font-size: 15px;
+    text-align: center;
+}
+
+ul {
+  list-style-type: none;
+}
+
+ul li {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+@media screen and (min-width: 1036px) {
+  .grid {
+  display: grid;
+  grid-template-columns: 40% 1fr;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas:
+  "name ."
+  "subt ."
+  "cont ."
+  "lang ."
+  "footer ."
+  }
+
+  .name  {
+      grid-area: name;
+      text-align: center;
+      font-family: 'Miss Fajardose', cursive;
+      font-size: 120px;
+      font-weight: 590;
+
+  }
+
+  .lang {
+    grid-area: lang;
+    display: grid;
+    grid-gap: 30px;
+    min-height: 50px;
+    text-align: center;
+    grid-template-columns: 70% 1fr;
+    grid-template-areas:
+    "lang_box ."
+
+  }
+}
+
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-image:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url("../img/von-cadenberg-natura-azzurro1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+  color: white;
+}
